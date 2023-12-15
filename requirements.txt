@@ -4,4 +4,5 @@ pandas
 scikit-learn
 flask
 tflearn
-tensorflow
+tensorflow==2.12.0
+
