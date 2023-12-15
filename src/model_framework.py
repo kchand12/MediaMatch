@@ -174,27 +174,27 @@ def response(sentence, userID='123', show_details=False, context={}):
     # Process input based on the current state
     if context['state'] == 'start':
         context['state'] = 'ask_genre'
-        return "What movie genre are you interested in?", context
+        return "What Movie Genre are you interested in (if multiple, please separate them with a comma)? [Type 'skip' to skip this question] ", context
 
     elif context['state'] == 'ask_genre':
         context['genres'] = sentence
         context['state'] = 'ask_keywords'
-        return "What are some keywords that describe the movie you want to watch?", context
+        return "What are some of the keywords that describe the movie you want to watch, like elements of the plot, whether or not it is about friendship, etc? (if multiple, please separate them with a comma)? [Type 'skip' to skip this question]", context
 
     elif context['state'] == 'ask_keywords':
         context['keywords'] = sentence
         context['state'] = 'ask_emotion'
-        return "What emotions would you like the movie to evoke?", context
+        return "What emotions would you like the movie to evoke or explore? ex. emotional, intense, exciting, passionate, scary etc. (if multiple, please separate them with a comma) [Type 'skip' to skip this question]", context
 
     elif context['state'] == 'ask_emotion':
         context['emotion'] = sentence
         context['state'] = 'ask_actors'
-        return "Who are some actors within the genre that you love?", context
+        return "Who are some actors within the genre that you love (if multiple, please separate them with a comma)? [Type 'skip' to skip this question]", context
 
     elif context['state'] == 'ask_actors':
         context['actors'] = sentence
         context['state'] = 'ask_directors'
-        return "Who are some directors within the genre that you love?", context
+        return "Who are some directors within the genre that you love (if multiple, please separate them with a comma)? [Type 'skip' to skip this question]", context
 
     elif context['state'] == 'ask_directors':
         context['directors'] = sentence
