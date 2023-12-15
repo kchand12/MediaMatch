@@ -5,4 +5,4 @@ scikit-learn
 flask
 tflearn
 tensorflow==2.12.0
-
+Pillow==8.2.0
