@@ -1,0 +1,33 @@
+{ "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hey", "Hello", "Good day", "What's up"],
+            "responses": ["Hello! How can I assist you today?", "Hi there! Looking for a movie recommendation?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you", "Goodbye", "Nice talking to you"],
+            "responses": ["Goodbye! Have a great day!", "See you later! Enjoy your movie time!"]
+        },
+        {
+            "tag": "movie_recommendation",
+            "patterns": ["Can you recommend a movie?", "I want to watch a movie", "Suggest me a good film", "I'm looking for a movie suggestion", "What movie should I watch?", "movie recommendation?", "want a movie suggestion"],
+            "responses": ["Sure! What genre are you interested in?", "I can help with that. What type of movies do you like?", "Absolutely, do you have a preferred genre or actor?"]
+        },
+        {
+            "tag": "thank_you",
+            "patterns": ["Thanks", "Thank you", "Appreciate it"],
+            "responses": ["You're welcome!", "Glad to help!", "Anytime!"]
+        },
+        {
+            "tag": "no_preference",
+            "patterns": ["Any movie", "Anything is fine", "No preference", "Surprise me", "Choose something"],
+            "responses": ["How about answering some of these questions, to help me decide!"]
+        },
+        {
+            "tag": "specific_genre",
+            "patterns": ["I love comedies", "I prefer horror movies", "Anything sci-fi", "I enjoy romance films", "I want an action film", "Give me a documentary", "love animation", "need a thriller or crime movie"],
+            "responses": ["Great choice! I'll find something in that genre for you."]
+        }
+    ]
+}
