@@ -20,3 +20,6 @@ The recommender system uses Term Frequency-Inverse Document Frequency. This is a
 
 Ensure all the dependenies outlined in the requirements.txt are installed. IMPORTANT: please download all the datasets found here (https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) and store in the data file. Both credits.csv and movies_metadata.csv were too big to upload to github so the current repository only reflect smaller snippets. 
 This application is using Streamlit fronend to creat an interactive web application where users can input their preferences. Please install streamlit and navigate to the src folder. From there run the command: streamlit run chatbot_app.py
+
+[Video Presentation Link]
+https://youtu.be/Z5UKqP4-Y5E
